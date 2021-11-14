@@ -13,19 +13,27 @@ public class WaveSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        WaveManager.SharedInstance.AddWave(1);
         InvokeRepeating(Constantes.metodos.metodoSpawnEnemigo,starTime,spawnRate);
         Invoke(Constantes.metodos.metodoCancelarSpawnEnemigo,endTime);
     }
 
+
+
+    void EndWave()
+    {
+      
+        CancelInvoke();
+    }
+
     void SpawnEnemy()
     {
-        //Quaternion q = Quaternion.Euler(0,transform.eulerAngles.y + Random.Range(-45.0f,45.0f),0);
         Instantiate(prefab, transform.position, transform.rotation);
     }
 
     void CancelSpawnEnemy()
     {
-
+        CancelInvoke();
     }
 
 

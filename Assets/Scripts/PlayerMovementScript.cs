@@ -8,11 +8,11 @@ using UnityEngine;
 public class PlayerMovementScript : MonoBehaviour
 {
     [Tooltip("Velocidad de movimiento del personaje")]
-    [Range(0,10)]
+    [Range(0,1000)]
     public float speed;
 
     [Tooltip("Velocidad de rotación de la camar")]
-    [Range(0, 10)]
+    [Range(0, 360)]
     public float rotationSpeed;
 
     [SerializeField]
@@ -28,6 +28,8 @@ public class PlayerMovementScript : MonoBehaviour
 
     private Rigidbody rb;
 
+    private Animator _animator;
+
     Vector3 mousePosition;
 
     public Vector3 getMousePosition()
@@ -40,6 +42,7 @@ public class PlayerMovementScript : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         rb = GetComponent<Rigidbody>();
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -56,7 +59,11 @@ public class PlayerMovementScript : MonoBehaviour
             mousePosition = rayCastHit.point;
         }
 
-        MoveCharacter();
+        if (Time.timeScale > 0)
+        {
+            MoveCharacter();
+        }
+        
     }
 
     private void ActionButtons()
@@ -85,14 +92,17 @@ public class PlayerMovementScript : MonoBehaviour
         float space = speed * Time.deltaTime;
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        Vector3 dir = new Vector3(speed * horizontal, 0, speed * vertical);
-        transform.Translate(dir.normalized * space);
+        Vector3 dir = new Vector3(horizontal,0,vertical);
+        //transform.Translate(dir.normalized * space);
         rb.AddRelativeForce(dir.normalized*space);
 
-        float angle = rotationSpeed * Time.deltaTime;
+        
+
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = -Input.GetAxis("Mouse Y");
         targetToFollow.eulerAngles += speed * new Vector3(mouseY, mouseX, 0);
-        rb.AddRelativeTorque(0,mouseX*angle,0);
+
+
+        _animator.SetFloat("Velocity", rb.velocity.magnitude);
     }
 }

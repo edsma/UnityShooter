@@ -3,6 +3,13 @@ Library\Bee\artifacts\movedfrom\Unity.RenderPipelines.Universal.Runtime.ref.dll_
 Library\Bee\artifacts\movedfrom\Unity.Timeline.ref.dll_11094804447753086567.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.UI.ref.dll_9544429269086051277.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEngine.UI.ref.dll_4673177533587997752.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.dll_9955050896786407654.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Mdb.dll_6396779868730461603.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Pdb.dll_8077317899955572518.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Rocks.dll_17129485872325464070.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Burst.Unsafe.dll_11602601390217203661.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Plastic.Antlr3.Runtime.dll_11427514529796811903.movedfrom
+Library\Bee\artifacts\movedfrom\Unity.Plastic.Newtonsoft.Json.dll_11044742245522054470.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.Graphs.dll_9956430273641640670.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.CoreModule.dll_12053887996422526124.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.DeviceSimulatorModule.dll_7847156266347367637.movedfrom
@@ -82,10 +89,3 @@ Library\Bee\artifacts\movedfrom\UnityEngine.VRModule.dll_1199708630066237604.mov
 Library\Bee\artifacts\movedfrom\UnityEngine.WindModule.dll_4663391377195269696.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEngine.XRModule.dll_4856283001787244034.movedfrom
 Library\Bee\artifacts\movedfrom\UnityEditor.WindowsStandalone.Extensions.dll_13055060060862804916.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.dll_5051230533677969380.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Mdb.dll_9981519741955443745.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Pdb.dll_11662057773180554660.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.Burst.Cecil.Rocks.dll_10691275826332101188.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.Burst.Unsafe.dll_14781620639615098735.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.Plastic.Antlr3.Runtime.dll_4653111171336530173.movedfrom
-Library\Bee\artifacts\movedfrom\Unity.Plastic.Newtonsoft.Json.dll_9169122841574457832.movedfrom

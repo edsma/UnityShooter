@@ -1902,6 +1902,7 @@ GameObject:
   - component: {fileID: -593850652667305787}
   - component: {fileID: 4382682926498079597}
   - component: {fileID: -7146960972622854069}
+  - component: {fileID: 7859642121338289097}
   m_Layer: 0
   m_Name: HPCharacter
   m_TagString: Untagged
@@ -1957,7 +1958,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7673487251499248760}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2.0093668
@@ -1991,7 +1992,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a850d50dfab9ad4fb2dfb60f8cec33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 0
+  amount: 100
+--- !u!114 &7859642121338289097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673487251499248760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbc75e7500680d24a81cd05da9f3b0de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointAmount: 100
 --- !u!1 &7673487251499248762
 GameObject:
   m_ObjectHideFlags: 0

@@ -56,16 +56,28 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\EnemiesUI.cs" />
+    <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\Life.cs" />
+    <Compile Include="Assets\Scripts\WavesUI.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Scripts\ForwarMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerScoreUI.cs" />
+    <Compile Include="Assets\Scripts\GunConfiguration.cs" />
     <Compile Include="Assets\Scripts\Common\Constantes.cs" />
     <Compile Include="Assets\Scripts\DamageOnContact.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\PlayerBulletUI.cs" />
     <Compile Include="Assets\Scripts\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\WaveManager.cs" />
     <Compile Include="Assets\Scripts\Mouse3D.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementScript.cs" />
+    <Compile Include="Assets\Scripts\LifeBar.cs" />
+    <Compile Include="Assets\Scripts\GameModeWaves.cs" />
     <Compile Include="Assets\Scripts\PlayerShooting.cs" />
   </ItemGroup>
   <ItemGroup>
